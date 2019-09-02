@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Memory Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="game.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <section class="header__message">
+                <div class="header__title">Business Memory Game</div>
+                <div class="header__subtitle">
+                    Let's Have Fun
+                </div>
+            </section>
+        </div>
+        <div class="header-game">
+            <div class="header-game__level js-level-easy">
+                <div class="header-game__name">Easy: 12 cards</div>
+            </div>
+            <div class="header-game__level js-level-regular">
+                <div class="header-game__name">Regular: 20 cards</div>
+            </div>
+            <div class="header-game__level js-level-hard">
+                <div class="header-game__name">Hard: 30 cards</div>
+            </div>
+        </div>
+        <div class="header-game">
+            <div class="header-player js-player-1">
+                <div class="header-player__name"> PLAYER 1 </div>
+                <div class="header-player__score"> Score: 0</div>
+                <div class="header-player__round"> Round: 0</div>
+            </div>
+            <div class="header-player js-player-2">
+                <div class="header-player__name"> PLAYER 2 </div>
+                <div class="header-player__score"> Score: 0</div>
+                <div class="header-player__round"> Round: 0</div>
+            </div>
+        </div>
+        <div class="header__message">
+            <div class="header__subtitle js-winner-name"></div>
+            <div class="header__subtitle js-winner-game-over"></div>
+        </div>
+        <div class="header-game">
+            <div class="header-game__new">
+                <div class="header-game__name">New Game</div>
+            </div>
+        </div>
+        <section class="memory-game" id="memory-game"></section>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
